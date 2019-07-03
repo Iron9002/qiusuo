@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>求索教育</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="core/css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="core/css/framework7-icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="private-css/index.css">
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+	<!-- Statusbar overlay -->
+	<div class="appbar">
+			<div class="appbar-inner">
+				<a href="#" class="button button-small panel-toggle display-flex" id="iwantknowclass">
+					<button class="col button button-fill color-blue apptitle know-class">了解课程</button>
+				</a>
+				<a href="#" class="button button-small display-flex margin-left-half" id="iwantknowlocation">
+					<button class="col button button-fill color-blue apptitle know-location">授课地点</button>
+				</a>
+				<a href="#" class="button button-small display-flex margin-left-half" id="iwantjoinclass">
+					<button class="col button button-fill color-blue apptitle join-class">我要报名</button>
+				</a>
+			</div>
+		</div>
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main" style="margin-top:-10px;">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+        
+
+          <div class="page-content  ptr-content" style="background-color:#d9e0e66e">
+			<div class="ptr-preloader" >
+				<div class="preloader"></div>
+				<div class="ptr-arrow"></div>
+			</div>
+			
+			<!-- Top Navbar -->
+			<div class="card demo-facebook-card">
+				<div class="card-header">
+	    				<div class="p-card-title join-card-title" style="font-size:20px;">基本信息</div>
+	  			</div>
+				<div class="list no-hairlines-md">
+				  <ul>
+				    <li class="item-content item-input">
+				      <div class="item-inner">
+				        <div class="item-input-wrap">
+				          <input type="text" placeholder="学生姓名" id="sname">
+				          <span class="input-clear-button"></span>
+				        </div>
+				      </div>
+				    </li>
+				    <li class="item-content item-input">
+				      <div class="item-inner">
+				        <div class="item-input-wrap">
+				          <input type="text" placeholder="联系电话" id="smobile" required validate pattern="[0-9]*" data-error-message="请输入正确号码">
+				          <span class="input-clear-button"></span>
+				        </div>
+				      </div>
+				    </li>
+				    <li class="item-content item-input">
+				      <div class="item-inner">
+				        <div class="item-input-wrap">
+				          <input type="text" placeholder="学生年龄" id="sage" required validate pattern="[0-9]*" data-error-message="请输入数字">
+				          <span class="input-clear-button"></span>
+				        </div>
+				      </div>
+				    </li>
+				    </ul>
+				    <button class="col button button-fill join-class" style="width:96%;margin-right:auto;margin-left:auto;font-size:20px;" id="submit">我要试听</button>
+					<div style="height:10px;"></div>
+				</div>
+			</div>
+			<div class="card demo-facebook-card">
+	   			<div class="card-header">
+	    				<div class="p-card-title join-card-title" style="font-size:20px;">报名须知</div>
+	  			</div>
+		  		<div class="card-content card-content-padding">
+			   		<div class="list simple-list"  style="font-size:15px;">
+						<ul>
+							<li>本课程适合7岁及7岁以上儿童</li>
+							<li style='color:#e66b30;'>仅需58元即可参加“编程一小时“体验课程</li>
+							<li>上课前请准备好笔记本电脑，普通配置即可</li>
+							<li>体验课的授课时间很快会通知您</li>
+							<li>欢迎各位家长陪同试听</li>
+						</ul>
+					</div>
+	  			</div>
+			</div>
+			<div class="card demo-facebook-card" >
+				<div class="card-header">
+	    				<div class="p-card-title"  style="font-size:15px;">识别图中二维码，关注我们的订阅号了解更多</div>
+	  			</div>
+				<div class="card-content card-content-padding">
+					<a href="#" class="pb-standalone-captions">
+						<img src="image/wx_qiusuo.jpg" width="100%"/>
+					</a>
+				</div>
+			</div>
+          <!-- Bottom Toolbar
+          <div class="toolbar toolbar-bottom">
+            <div class="toolbar-inner">
+            </div>
+          </div> -->
+
+          <!-- Scrollable page content 
+          <div class="page-content">
+            <p>Page content goes here</p>-->
+            <!-- Link to another page 
+            <a href="/about/">About app</a>-->
+          </div>
+        </div>
+    </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+	<script type="text/javascript" src="core/js/framework7.bundle.min.js"></script>
+	<script type="text/javascript" src="public-js/jquery.js"></script>
+    <!-- Path to your app js-->
+    	<script type="text/javascript" src="private-js/joinclass.js"></script>
+	<script type="text/javascript" src="private-js/apptitle.js"></script>
+	<script type="text/javascript" src="private-js/panel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Color theme for statusbar -->
+		<meta name="theme-color" content="#2196f3">
+		<!-- Your app title -->
+		<title>求索教育</title>
+		<!-- Path to Framework7 Library Bundle CSS -->
+		<link rel="stylesheet" href="core/css/framework7.bundle.min.css">
+		<link rel="stylesheet" href="core/css/framework7-icons.css">
+		<!-- Path to your custom app styles-->
+		<link rel="stylesheet" href="private-css/index.css">
+	</head>
+	<body>
+		<!-- App root element -->
+		<div id="app">
+		      	<!-- Statusbar overlay -->
+			
+		      	<!-- Your main view, should have "view-main" class -->
+			<div class="view view-main">
+		        <!-- Initial Page, "data-name" contains page name -->
+			        <div data-name="home" class="page">
+			        
+			        	<div class="panel-overlay"></div>
+			 
+				    <!-- Left panel -->
+			
+					<div class="page-content  infinite-scroll-content" style="background-color:#d9e0e66e">
+							
+						<!-- Top Navbar -->
+						<div class="navbar" style="height:35px;">
+							<div class="navbar-inner" style="height:35px;">
+								<div class="title">学生信息</div>
+							</div>
+						</div>
+						<div class="data-table">
+							<table>
+								<thead>
+									<tr>
+										<th class="label-cell">学生姓名</th>
+										<th class="numeric-cell">联系电话</th>
+										<th class="numeric-cell">学生年龄</th>
+									</tr>
+								</thead>
+								<tbody id="studentInfo">
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Path to Framework7 Library Bundle JS-->
+		<script type="text/javascript" src="core/js/framework7.bundle.min.js"></script>
+		<script type="text/javascript" src="public-js/jquery.js"></script>
+		<!-- Path to your app js-->
+		<script type="text/javascript" src="private-js/base.js"></script>
+		<script type="text/javascript" src="private-js/viewstudent.js"></script>
+		<script type="text/javascript" src="private-js/panel.js"></script>
+	</body>
+</html>

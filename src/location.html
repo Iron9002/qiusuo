@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>求索教育</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="core/css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="core/css/framework7-icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="private-css/index.css">
+  </head>
+  <body>
+    <!-- App root element -->
+	<div id="app">
+	<!-- Statusbar overlay -->
+	<div class="appbar">
+		<div class="appbar-inner">
+			<a href="#" class="button button-small panel-toggle display-flex" id="iwantknowclass">
+					<button class="col button button-fill color-blue apptitle know-class">了解课程</button>
+				</a>
+				<a href="#" class="button button-small display-flex margin-left-half" id="iwantknowlocation">
+					<button class="col button button-fill color-blue apptitle know-location">授课地点</button>
+				</a>
+				<a href="#" class="button button-small display-flex margin-left-half" id="iwantjoinclass">
+					<button class="col button button-fill color-blue apptitle join-class">我要报名</button>
+				</a>
+		</div>
+	</div>
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main" style="margin-top:-10px;">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+        
+        <div class="panel-overlay"></div>
+ 
+	    <!-- Left panel -->
+
+          <div class="page-content  ptr-content" style="background-color:#d9e0e66e">
+			  
+			<div class="ptr-preloader" >
+				<div class="preloader"></div>
+				<div class="ptr-arrow"></div>
+			</div>
+			
+			<!-- Top Navbar -->
+		
+			<div class="card demo-facebook-card" >
+				<div class="card-header">
+					<div class="p-card-title location-card-title">教室掠影</div>
+				</div>
+				<div class="card-content card-content-padding">
+					<p>功能齐全，设施完善，充分考虑家长陪同孩子的需求。参加课程的孩子能获得良好的教学体验，每一个孩子都能得到最妥善的安排。
+					</p>
+					<a href="#" class="pb-standalone-captions">
+						<img src="image/classroom/17_entry.jpg" width="100%"/>
+					</a>
+				</div>
+			</div>
+			<div class="card demo-facebook-card">
+	   			<div class="card-header">
+	    				<div class="p-card-title location-card-title">具体地址</div>
+	  			</div>
+		  		<div class="card-content card-content-padding">
+			   		<p>授课地点为17教室重庆市渝北店，具体地址是：渝北区新牌坊教室地址为龙湖·晶郦馆A馆L4层 &nbsp;&nbsp;
+			   			<!--  <a href="#" id="howtogo">导航</a>-->
+			  		</p>
+			    		
+			    		<img src="image/classroom/17_location_info.png" width="100%"/>
+		  		</div>
+			</div>
+			<div style="height:10px;"></div>
+
+			<!--<div class="preloader infinite-scroll-preloader"></div>
+           Bottom Toolbar
+          <div class="toolbar toolbar-bottom">
+            <div class="toolbar-inner">
+            </div>
+          </div> -->
+
+          <!-- Scrollable page content 
+          <div class="page-content">
+            <p>Page content goes here</p>-->
+            <!-- Link to another page 
+            <a href="/about/">About app</a>-->
+          </div>
+        </div>
+    </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+	<script type="text/javascript" src="core/js/framework7.bundle.min.js"></script>
+    <!-- Path to your app js-->
+	<script type="text/javascript" src="private-js/location.js"></script>
+	<script type="text/javascript" src="private-js/apptitle.js"></script>
+	<script type="text/javascript" src="private-js/panel.js"></script>
+  </body>
+</html>

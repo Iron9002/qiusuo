@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>求索教育</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="core/css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="core/css/framework7-icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="private-css/index.css">
+  </head>
+  <body>
+    <!-- App root element -->
+	<div id="app">
+      <!-- Statusbar overlay -->
+		<div class="appbar">
+			<div class="appbar-inner">
+				<a href="#" class="button button-small panel-toggle display-flex" id="iwantknowclass">
+					<button class="col button button-fill apptitle know-class">了解课程</button>
+				</a>
+				<a href="#" class="button button-small display-flex margin-left-half" id="iwantknowlocation">
+					<button class="col button button-fill apptitle know-location">授课地点</button>
+				</a>
+				<a href="#" class="button button-small display-flex margin-left-half" id="iwantjoinclass">
+					<button class="col button button-fill apptitle join-class">我要报名</button>
+				</a>
+			</div>
+		</div>
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main" style="margin-top:-10px;">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+        
+        <div class="panel-overlay"></div>
+ 
+	    <!-- Left panel -->
+	<!--  <div class="panel panel-right">
+		<div class="list links-list" >
+			<ul>
+				<li><a href="#" id="advantage">CodeCombate来啦</a></li>
+				<li><a href="#" id="location">授课环境</a></li>
+				<li><a href="#" id="joinclass">试听课程报名</a></li>
+			</ul>
+		</div>
+	</div>-->
+	<div class="page-content  infinite-scroll-content" style="background-color:#d9e0e66e">
+			<!-- Top Navbar -->
+			
+			<div class="card demo-facebook-card">
+				<div class="card-header index-card-header-color">
+					<div class="p-card-title">来自美国的Code Combate</div>
+				</div>
+				<div class="card-content card-content-padding">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Code Combate是来自于美国一线的编程教育课程，目前学习支持50余种语言，全球有1200万学习者，
+					社区累计代码10亿行，注册教师90,000余名，学习者已经遍布全球190个国家
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Code Combate是获得了美国大学理事会认证的学习平台，完成学习后可冲抵大学学分。CodeCombat
+					推出了AP CSP教学大纲并提供相关教学资源，同时支持中文和英文。
+					</p>
+						<video src="image/codecombate/codecombate_teacher.mp4" style="width:100%;" controls="controls"></video>
+				</div>
+			</div>
+			
+			<div class="card demo-facebook-card" >
+				<div class="card-header">
+					<div class="p-card-title">高考出现编程题</div>
+				</div>
+				<div class="card-content card-content-padding">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					编程题目连续多变出现在各地的高考试卷中，在可以预见的未来，编程题将会成为常规的题目。
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江省的新高考中，学生已经可以选考《信息技术》，也就是选考计算机科学和编程。
+					</p>
+						<a href="#" class="pb-standalone-captions" id="examInfo">
+							<img src="image/codecombate/exam3_beijing.jpg" width="100%"/>
+						</a>
+				</div>
+			</div>
+			
+			<div class="card demo-facebook-card" >
+				<div class="card-header">
+					<div class="p-card-title">简单易学</div>
+				</div>
+				<div class="card-content card-content-padding">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Code Combate基于Python语言设计的学习工具。Python是一种代表简单主义思想的语言，被大量用户所欢迎的、用途广泛的语言。
+					阅读一个良好的Python程序就感觉像是在读英语的短文一样，它使你能够专注于解决问题而不是去学习复杂的语法。简单易学，阅读简单。Python语言具有优良的移植性、可扩展性、可嵌入性；
+					具有种类繁多的扩展库，能满足你各类的应用需求。
+					</p>
+					<a href="#" class="pb-standalone-captions" id="pythonInfo">
+						<img src="image/codecombate/python_2.png" width="100%"/>
+					</a>
+				</div>
+			</div>
+			
+			
+			<div class="card demo-facebook-card">
+	   			<div class="card-header">
+	    				<div class="p-card-title">寓教于乐</div>
+	  			</div>
+		  		<div class="card-content card-content-padding">
+			   		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					传统方式的编程教学枯燥而复杂，CodeCombat另辟踩径从最基础的内容开始，
+					将编程融入到真正的实践中，通过课程中设计的不同迷宫关卡来训练学生的逻辑思考和编程思维来寻求迷宫出路，
+					求解过程中将会熟悉Python的语法以及编程技巧，且寓教于乐。
+					</p>
+			    		<img src="image/codecombate/havefun_1.jpg" width="100%"/>
+		  		</div>
+			</div>
+			<div class="card demo-facebook-card" id="fullClassContent">
+				<div class="card-header">
+					<div class="p-card-title">完善的课程体系</div>
+				</div>
+				<div class="card-content card-content-padding">
+					<p>覆盖从小学到大学全年龄段课程，完美对接美国编程教育课程，学习难度从低到高，针对各年龄段都可以提供学习课程。（不过仍然建议高年龄段初学者从计算机科学一开始学习）
+					</p>
+					<a href="#" class="pb-standalone-captions" id="fullClass">
+						<img src="image/codecombate/fullclass_1.jpg" width="100%"/>
+					</a>
+				</div>
+			</div>
+			
+			<div style="height:10px;"></div>
+		 <!--	<div class="preloader infinite-scroll-preloader"></div>
+          Bottom Toolbar
+          <div class="toolbar toolbar-bottom">
+            <div class="toolbar-inner">
+            </div>
+          </div> -->
+
+          <!-- Scrollable page content 
+          <div class="page-content">
+            <p>Page content goes here</p>-->
+            <!-- Link to another page 
+            <a href="/about/">About app</a>-->
+          </div>
+        </div>
+    </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="core/js/framework7.bundle.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="private-js/index.js"></script>
+    <script type="text/javascript" src="private-js/apptitle.js"></script>
+    <script type="text/javascript" src="private-js/panel.js"></script>
+  </body>
+</html>

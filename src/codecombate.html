@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>求索教育</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="core/css/framework7.bundle.min.css">
+    <link rel="stylesheet" href="core/css/framework7-icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="private-css/index.css">
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Statusbar overlay -->
+	
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+        
+        <div class="panel-overlay"></div>
+ 
+	    <!-- Left panel -->
+	<div class="panel panel-right">
+		<div class="list links-list" >
+			<ul>
+				<li><a href="#" id="codecombate">CodeCombate来啦</a></li>
+				<li><a href="#" id="advantage">我们的优势</a></li>
+				<li><a href="#" id="location">授课地点</a></li>
+				<li><a href="#" id="joinclass">我要报名</a></li>
+			</ul>
+		</div>
+	</div>
+
+          <div class="page-content  infinite-scroll-content" style="background-color:#d9e0e66e">
+			
+			<!-- Top Navbar -->
+			<div class="navbar" style="height:35px;">
+				<div class="navbar-inner" style="height:35px;">
+					<div class="title">我们的优势</div>
+					<div class="right" style="margin-right:10px;margin-top:5px;">
+						<a href="#" class="panel-open">
+							<i class="f7-icons">bars</i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="card demo-facebook-card" >
+				<div class="card-header">
+					<div class="p-card-title">语言紧跟时代</div>
+				</div>
+				<div class="card-content card-content-padding">
+					<p>基于Python语言，简单易学，阅读简单。具有优良的移植性、可扩展性、可嵌入性；种类繁多的扩展库，不再需要重新造轮子
+					</p>
+					<img src="image/python.jpg" width="100%"/>
+				</div>
+			</div>
+			<div class="card demo-facebook-card">
+	   			<div class="card-header">
+	    				<div class="p-card-title">寓教于乐</div>
+	  			</div>
+		  		<div class="card-content card-content-padding">
+			   		<p>依托图形界面、人物互动，激发孩子们的学习兴趣，编程不再枯燥
+			  		</p>
+			    		<img src="image/havefun.png" width="100%"/>
+		  		</div>
+			</div>
+			<div class="card demo-facebook-card">
+				<div class="card-header">
+					<div class="p-card-title">完善的课程体系</div>
+				</div>
+				<div class="card-content card-content-padding">
+					<p>覆盖从小学到大学全年龄段课程，完美对接美国编程教育课程
+					</p>
+					<img src="image/allclass.png" width="100%"/>
+				</div>
+			</div>
+			<div class="card demo-facebook-card">
+				<div class="card-header">
+					<div class="p-card-title">用作品来呈现</div>
+				</div>
+				<div class="card-content card-content-padding">
+					<p>我们的12岁的学员，通过学习制作了一个简单的小游戏，现在，大家来观赏下吧
+					</p>
+					<img src="image/python.jpg" width="100%"/>
+				</div>
+			</div>
+			<div class="preloader infinite-scroll-preloader"></div>
+          <!-- Bottom Toolbar
+          <div class="toolbar toolbar-bottom">
+            <div class="toolbar-inner">
+            </div>
+          </div> -->
+
+          <!-- Scrollable page content 
+          <div class="page-content">
+            <p>Page content goes here</p>-->
+            <!-- Link to another page 
+            <a href="/about/">About app</a>
+          </div>
+        </div>-->
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="core/js/framework7.bundle.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="private-js/index.js"></script>
+    <script type="text/javascript" src="private-js/panel.js"></script>
+  </body>
+</html>
