@@ -27,59 +27,31 @@ var app = new Framework7({
 
 var $$ = Dom7;
 
-var myClassPic  = app.photoBrowser.create({
-	photos:[
-		{
-			url:'image/teacher/class_01.jpg'
-		},
-		{
-			url:'image/teacher/class_02.jpg'
-		},
-		{
-			url:'image/teacher/class_03.jpg'
-		},
-	],
-    type: 'standalone'
-});
-$$('#classPic').on('click', function () {
-	myClassPic.open();
-});
-
-
 
 /*=== Default standalone ===*/
-var myPhotoBrowserPopupDark  = app.photoBrowser.create({
+
+var examPicture  = app.photoBrowser.create({
     photos : [
     	{
-            url: 'image/classroom/17_environment.jpg',
-            caption:'充满的童趣的教学环境'
-        },
-    	{
-            url: 'image/classroom/17_B12.jpg',
-            caption: '中型教室，有投影和大屏电视'
+            url: 'image/codecombate/exam3_beijing.jpg',
+            caption: '2018年北京卷'
         },
         {
-            url: 'image/classroom/17_A04_2.jpg',
-            caption:'小型教室，有投影和大屏'
+            url: 'image/codecombate/exam2_jiangsu.jpg',
+            caption: '2018年江苏卷'
         },
         {
-            url: 'image/classroom/17_rest.jpg',
-            caption:'供50人使用的休息区'
+            url: 'image/codecombate/exam1_quanguo2.jpg',
+            caption: '2018年全国卷（二）'
         },
         {
-            url: 'image/classroom/17_classroom.jpg',
-            caption:'综合教室区'
+            url: 'image/codecombate/exam5.jpg'
         },
-        {
-            url: 'image/classroom/17_corridor.jpg',
-            caption:'走廊实景'
-        },
-        
     ],
     type: 'standalone'
 });
-$$('#roomPic').on('click', function () {
-    myPhotoBrowserPopupDark.open();
+$$('#examInfo').on('click', function () {
+	examPicture.open();
 });
 
 //Pull to refresh content

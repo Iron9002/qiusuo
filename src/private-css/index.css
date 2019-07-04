@@ -39,7 +39,11 @@
 }
 
 .apptitle{
-	font-size:20px;
+	font-size:15px;
+	width:200px;
+}
+.import-mean{
+	background-color:#cc7cef;
 }
 .know-class{
 	background-color:#2196f3;

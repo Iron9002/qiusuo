@@ -50,29 +50,6 @@ $$('#pythonInfo').on('click', function () {
 	pythonInfoPicture.open();
 });
 
-var examPicture  = app.photoBrowser.create({
-    photos : [
-    	{
-            url: 'image/codecombate/exam3_beijing.jpg',
-            caption: '2018年北京卷'
-        },
-        {
-            url: 'image/codecombate/exam2_jiangsu.jpg',
-            caption: '2018年江苏卷'
-        },
-        {
-            url: 'image/codecombate/exam1_quanguo2.jpg',
-            caption: '2018年全国卷（二）'
-        },
-        {
-            url: 'image/codecombate/exam5.jpg'
-        },
-    ],
-    type: 'standalone'
-});
-$$('#examInfo').on('click', function () {
-	examPicture.open();
-});
 
 
 var fullClassPicture  = app.photoBrowser.create({
