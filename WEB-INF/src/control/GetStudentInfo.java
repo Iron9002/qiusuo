@@ -34,6 +34,7 @@ public class GetStudentInfo extends HttpServlet{
 					obj.put("name", rs.getString("si_name")) ;
 					obj.put("mobile", rs.getString("si_mobile")) ;
 					obj.put("age", rs.getString("si_age")) ;
+					obj.put("location", rs.getString("si_location")) ;
 					jsonArray.add(obj) ;
 				}
 				OutString.out("json", jsonArray.toString());

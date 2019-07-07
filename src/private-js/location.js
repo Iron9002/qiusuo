@@ -38,6 +38,12 @@ var myClassPic  = app.photoBrowser.create({
 		{
 			url:'image/teacher/class_03.jpg'
 		},
+		{
+			url:'image/teacher/class_04.jpg'
+		},
+		{
+			url:'image/teacher/class_05.jpg'
+		},
 	],
     type: 'standalone'
 });
