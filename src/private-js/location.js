@@ -38,6 +38,12 @@ var myClassPic  = app.photoBrowser.create({
 		{
 			url:'image/teacher/class_03.jpg'
 		},
+		{
+			url:'image/teacher/class_04.jpg'
+		},
+		{
+			url:'image/teacher/class_05.jpg'
+		},
 	],
     type: 'standalone'
 });
@@ -81,6 +87,25 @@ var myPhotoBrowserPopupDark  = app.photoBrowser.create({
 $$('#roomPic').on('click', function () {
     myPhotoBrowserPopupDark.open();
 });
+
+/*=== Default standalone ===*/
+var locationPicture  = app.photoBrowser.create({
+    photos : [
+    	{
+            url: 'image/classroom/17_location_info.png',
+            caption:'位置地图'
+        },
+    	{
+            url: 'image/classroom/jingliguan.jpg',
+            caption: '龙湖晶郦馆'
+        },
+    ],
+    type: 'standalone'
+});
+$$('#locationPic').on('click', function () {
+	locationPicture.open();
+});
+
 
 //Pull to refresh content
 var $ptrContent = $$('.view-main');

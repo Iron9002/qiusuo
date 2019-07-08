@@ -45,7 +45,8 @@ $(document).ready(function(){
 				json = $.parseJSON(res) ;
 				$.each(json,function(index,content){
 					var htmlNow = $("#studentInfo").html();
-					var html ="<tr><td  class='label-cell'>"+content.name
+					var html ="<tr><td  class='label-cell'>"+content.location
+									+"</td><td class='numeric-cell'>"+content.name
 									+"</td><td class='numeric-cell'>"+content.mobile
 									+"</td><td class='numeric-cell'>"+content.age+"岁</td></tr>" ;
 					$("#studentInfo").html(htmlNow+html) ;

@@ -68,13 +68,15 @@ $$('#submit').on('click',function(){
 		data:{
 			name:$$('#sname').val(),
 			mobile:$$('#smobile').val(),
-			age:$$('#sage').val()
+			age:$$('#sage').val(),
+			location:$$('#slocation').val()
 		},
 		success:function(res){
 			if(res=="true"){
 				$$('#sname').val("") ;
 				$$('#smobile').val("") ;
 				$$('#sage').val("") ;
+				$$('#slocation').val("") ;
 				var toastIcon = app.toast.create({
 					  //icon: app.theme === 'ios' ? '<i class="f7-icons">check_round_fill</i>' : '<i class="material-icons">check_round_fill</i>',
 					  text: '报名成功',
