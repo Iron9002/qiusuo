@@ -18,8 +18,11 @@ public class Parameters {
 	 */
 	public static final String Complete = "complete" ;
 	public static final String Send = "send" ;
+	public static final String FIRST_REG = "首次报名" ;
+	public static final String MANY_TIME = "次报名" ;
+	
 	/*
-	 * 标准Request名称
+	 * ;准Request名称
 	 */
 	public static final String ReqType="type" ;  //同一个Servlet不同处理过程的类�?
 	public static final String ReqObjectId="id"  ;//不同对象的主要ID ;
@@ -39,6 +42,8 @@ public class Parameters {
 	public static final String User = "user" ;
 	
  	
+	
+	
 	public static String getDateNow(){
 		try{
 			SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");//设置日期格式
