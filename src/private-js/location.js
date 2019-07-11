@@ -88,6 +88,25 @@ $$('#roomPic').on('click', function () {
     myPhotoBrowserPopupDark.open();
 });
 
+/*=== Default standalone ===*/
+var locationPicture  = app.photoBrowser.create({
+    photos : [
+    	{
+            url: 'image/classroom/17_location_info.png',
+            caption:'位置地图'
+        },
+    	{
+            url: 'image/classroom/jingliguan.jpg',
+            caption: '龙湖晶郦馆'
+        },
+    ],
+    type: 'standalone'
+});
+$$('#locationPic').on('click', function () {
+	locationPicture.open();
+});
+
+
 //Pull to refresh content
 var $ptrContent = $$('.view-main');
 //Add 'refresh' listener on it
