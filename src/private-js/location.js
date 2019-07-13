@@ -93,11 +93,15 @@ var locationPicture  = app.photoBrowser.create({
     photos : [
     	{
             url: 'image/classroom/17_location_info.png',
-            caption:'位置地图'
+            caption:'17教室（渝北店）渝北区新牌坊教室地址为龙湖·晶郦馆A馆L3层'
         },
     	{
             url: 'image/classroom/jingliguan.jpg',
             caption: '龙湖晶郦馆'
+        },
+        {
+            url: 'image/classroom/xueduoduo.jpg',
+            caption: '学多多（渝北店）重庆市渝北区新牌坊中渝国宾城11-12栋'
         },
     ],
     type: 'standalone'
