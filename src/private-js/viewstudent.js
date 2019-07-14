@@ -45,9 +45,11 @@ $(document).ready(function(){
 				json = $.parseJSON(res) ;
 				$.each(json,function(index,content){
 					var htmlNow = $("#studentInfo").html();
-					var html ="<tr><td  class='label-cell'>"+content.name
-									+"</td><td class='numeric-cell'>"+content.mobile
-									+"</td><td class='numeric-cell'>"+content.age+"岁</td></tr>" ;
+					var html ="<li><a href='#' class='item-link item-content'><div class='item-inner'>"+
+										"<div class='item-title-row'><div class='item-title'>"+content.name+"</div>"+
+										"<div class='item-after'>"+content.age+"岁</div></div>"+
+										"<div class='item-subtitle'>"+content.mobile+"</div>"+
+										"<div class='item-text'>"+content.location+"</div></div></a></li>" ;
 					$("#studentInfo").html(htmlNow+html) ;
 				});
 			}

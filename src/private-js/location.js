@@ -38,6 +38,12 @@ var myClassPic  = app.photoBrowser.create({
 		{
 			url:'image/teacher/class_03.jpg'
 		},
+		{
+			url:'image/teacher/class_04.jpg'
+		},
+		{
+			url:'image/teacher/class_05.jpg'
+		},
 	],
     type: 'standalone'
 });
@@ -81,6 +87,29 @@ var myPhotoBrowserPopupDark  = app.photoBrowser.create({
 $$('#roomPic').on('click', function () {
     myPhotoBrowserPopupDark.open();
 });
+
+/*=== Default standalone ===*/
+var locationPicture  = app.photoBrowser.create({
+    photos : [
+    	{
+            url: 'image/classroom/17_location_info.png',
+            caption:'17教室（渝北店）渝北区新牌坊教室地址为龙湖·晶郦馆A馆L3层'
+        },
+    	{
+            url: 'image/classroom/jingliguan.jpg',
+            caption: '龙湖晶郦馆'
+        },
+        {
+            url: 'image/classroom/xueduoduo.jpg',
+            caption: '学多多（渝北店）重庆市渝北区新牌坊中渝国宾城11-12栋'
+        },
+    ],
+    type: 'standalone'
+});
+$$('#locationPic').on('click', function () {
+	locationPicture.open();
+});
+
 
 //Pull to refresh content
 var $ptrContent = $$('.view-main');
