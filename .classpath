@@ -8,6 +8,7 @@
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/jsp-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="E:/Program Files (x86)/Tomcat8/lib/annotations-api.jar"/>
 	<classpathentry kind="lib" path="E:/Program Files (x86)/Tomcat8/lib/catalina.jar"/>
 	<classpathentry kind="lib" path="E:/Program Files (x86)/Tomcat8/lib/catalina-ant.jar"/>
@@ -53,5 +54,9 @@
 	<classpathentry kind="lib" path="E:/Program Files (x86)/Tomcat8/lib/tomcat-util-scan.jar"/>
 	<classpathentry kind="lib" path="E:/Program Files (x86)/Tomcat8/lib/tomcat-websocket.jar"/>
 	<classpathentry kind="lib" path="E:/Program Files (x86)/Tomcat8/lib/websocket-api.jar"/>
+=======
+	<classpathentry kind="lib" path="E:/Program Files (x86)/Tomcat8/lib/json-lib-2.2.3-jdk15.jar"/>
+	<classpathentry kind="lib" path="E:/Program Files (x86)/Tomcat8/lib/mysql-connector-java-5.0.8-bin.jar"/>
+>>>>>>> ac87999b9076feb741e9f4da89fb04825e1d90da
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>
